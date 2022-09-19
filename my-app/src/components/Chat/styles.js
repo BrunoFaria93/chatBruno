@@ -5,6 +5,8 @@ export const Container = styled.div`
   flex-direction: column;
   width: 100%;
   height: 90vh;
+  max-height: 90vh;
+  overflow: hidden;
   @media (min-width: 768px) {
   }
 
