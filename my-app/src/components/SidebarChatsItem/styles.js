@@ -35,6 +35,7 @@ export const Name = styled.span`
   font-size: 18px;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #f3f3f3;
 `;
 
 export const Avatar = styled.img`
