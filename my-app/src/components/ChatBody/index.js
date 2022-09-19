@@ -15,6 +15,13 @@ const ChatBody = ({ chatId }) => {
 
   const refBody = useRef("");
 
+  useEffect(() => {
+    if (refBody.current.scrollHeight > refBody.current.offsetHeight) {
+      refBody.current.scrollTop =
+        refBody.current.scrollHeight - refBody.current.offsetHeight;
+    }
+  }, [messagesRes]);
+
   return (
     <C.Container ref={refBody}>
       {messagesRes?.docs.map((message) => (
