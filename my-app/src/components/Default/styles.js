@@ -11,6 +11,8 @@ export const Container = styled.div`
   padding: 20px;
 
   img {
+    width: 200px;
+    height: 200px;
     animation: float 2s ease infinite;
   }
 

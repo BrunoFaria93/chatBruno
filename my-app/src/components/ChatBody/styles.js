@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   flex: 1;
+  height: 100%;
   background-color: #efeae2;
   overflow-y: auto;
 

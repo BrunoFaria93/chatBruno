@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 59px;
+  height: 10vh;
   background-color: #f0f2f5;
   padding: 10px 16px;
   display: flex;
@@ -9,6 +9,10 @@ export const Container = styled.div`
   justify-content: space-between;
   box-shadow: 0 1px 2px #0003;
   z-index: 1;
+
+  .icone {
+    color: gray;
+  }
 `;
 
 export const UserInfo = styled.div`

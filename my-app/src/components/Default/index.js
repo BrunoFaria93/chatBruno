@@ -6,7 +6,7 @@ const Default = () => {
   return (
     <C.Container>
       <img
-        src="https://ouch-cdn2.icons8.com/duRZperhqzgTo41KtRT4sJIhgffjgsLlHmIqVkRb6LY/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjA5/LzgwNmJkNGRmLTFk/ZDEtNDI3ZC1hYmIw/LWJjMGIxMzE4NGY2/Mi5zdmc.png"
+        src="https://i.pinimg.com/originals/87/c1/5b/87c15b1c7c465c9a8f9e979559fe87ac.png"
         alt=""
       ></img>
       <C.Title>Bruno Chat</C.Title>

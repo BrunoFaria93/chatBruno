@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 30vh;
+  height: 100%;
   overflow-y: auto;
 
   &::-webkit-scrollbar {
