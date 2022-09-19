@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   flex: 1;
-  height: 100%;
+  height: 80vh;
   background-color: #efeae2;
   overflow-y: auto;
 
