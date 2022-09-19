@@ -11,9 +11,6 @@ const Chat = ({ userChat }) => {
       <ChatHeader photoURL={userChat?.photoURL} name={userChat?.name} />
       <ChatBody chatId={userChat?.chatId} />
       <ChatFooter chatId={userChat?.chatId} />
-      <div className="footer">
-        <p>Por Bruno Faria</p>
-      </div>
     </C.Container>
   );
 };
