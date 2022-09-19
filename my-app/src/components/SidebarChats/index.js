@@ -4,6 +4,7 @@ import { auth, db } from "../../services/firebase";
 import * as C from "./styles";
 import { useCollection } from "react-firebase-hooks/firestore";
 import SidebarChatsItem from "../SidebarChatsItem";
+import Default from "../Default";
 
 const SidebarChats = ({ setUserChat, userChat }) => {
   const [user] = useAuthState(auth);
@@ -16,18 +17,28 @@ const SidebarChats = ({ setUserChat, userChat }) => {
 
   return (
     <C.Container>
-      {chatsSnapshot?.docs.map((item, index) => (
-        <C.Content key={index}>
-          <SidebarChatsItem
-            id={item.id}
-            users={item.data().users}
-            user={user}
-            setUserChat={setUserChat}
-            active={userChat?.chatId === item.id ? "active" : ""}
-          />
-          <C.Divider />
-        </C.Content>
-      ))}
+      {chatsSnapshot?.docs.length > 0 ? (
+        <>
+          {chatsSnapshot?.docs.map((item, index) => (
+            <C.Content key={index}>
+              <SidebarChatsItem
+                id={item.id}
+                users={item.data().users}
+                user={user}
+                setUserChat={setUserChat}
+                active={userChat?.chatId === item.id ? "active" : ""}
+              />
+              <C.Divider />
+            </C.Content>
+          ))}
+        </>
+      ) : (
+        <>
+          <div className="empty">
+            <Default />
+          </div>
+        </>
+      )}
     </C.Container>
   );
 };

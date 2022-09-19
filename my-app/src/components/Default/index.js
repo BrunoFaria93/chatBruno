@@ -1,6 +1,7 @@
 import React from "react";
 import * as C from "./styles";
 import { MdMessage } from "react-icons/md";
+import { MdDonutLarge, MdChat, MdMoreVert } from "react-icons/md";
 
 const Default = () => {
   return (
@@ -10,7 +11,11 @@ const Default = () => {
         alt=""
       ></img>
       <C.Title>Bruno Chat</C.Title>
-      <C.Info>Bem vindo(a) ao Bruno Chat</C.Info>
+      <C.Info>
+        Bem vindo(a) ao Bruno Chat! Para adicionar alguém e começar a fofoca,
+        clique no ícone <MdChat style={{ margin: "0px 4px" }} /> no topo de sua
+        tela e coloque o e-mail da pessoa desejada.
+      </C.Info>
     </C.Container>
   );
 };
