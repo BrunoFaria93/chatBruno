@@ -10,10 +10,7 @@ const Default = () => {
         alt=""
       ></img>
       <C.Title>Bruno Chat</C.Title>
-      <C.Info>
-        Agora você pode enviar e receber mensagens sem precisar manter seu
-        celular conectado à internet.
-      </C.Info>
+      <C.Info>Bem vindo(a) ao Bruno Chat</C.Info>
     </C.Container>
   );
 };
