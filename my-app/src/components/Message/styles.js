@@ -7,19 +7,19 @@ export const Line = styled.div`
   display: flex;
   word-break: break-all;
   white-space: pre-wrap;
-
   &.me {
     > div {
-      background-color: #dcf8c6;
+      background: linear-gradient(109.6deg, #dd5e89 13.4%, #f7bb97 80.2%);
     }
     justify-content: right;
   }
 `;
 
 export const Content = styled.div`
-  background-color: #fff;
+  background: linear-gradient(109.6deg, #a8c0ff 13.4%, #3f2b96 70.2%);
+
   border-radius: 10px;
-  box-shadow: 0 1px 1px #ccc;
+  box-shadow: 0 1px 1px #dd5e89;
   display: flex;
   flex-direction: column;
   padding: 3px;
@@ -33,7 +33,7 @@ export const Message = styled.span`
 
 export const MessageDate = styled.span`
   font-size: 11px;
-  color: #999;
+  color: black;
   text-align: right;
   height: 15px;
   margin: -5px 5px 0;

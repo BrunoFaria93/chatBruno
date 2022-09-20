@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 7vh;
+  height: 59px;
   background-color: #f0f2f5;
   padding: 10px 16px;
   display: flex;
@@ -10,8 +10,18 @@ export const Container = styled.div`
   box-shadow: 0 1px 2px #0003;
   z-index: 1;
 
+  background: linear-gradient(
+    109.6deg,
+    rgb(43, 1, 91) 13.4%,
+    rgb(122, 2, 54) 100.2%
+  );
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(5px);
+
+  color: #f3f3f3;
   .icone {
-    color: gray;
+    color: #f3f3f3;
   }
 `;
 
@@ -54,7 +64,7 @@ export const Options = styled.div`
   svg {
     width: 24px;
     height: 24px;
-    color: #54656f;
+    color: #f3f3f3;
     cursor: pointer;
   }
 `;
