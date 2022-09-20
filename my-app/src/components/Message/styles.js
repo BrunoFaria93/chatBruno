@@ -5,6 +5,8 @@ export const Container = styled.div``;
 export const Line = styled.div`
   margin: 10px;
   display: flex;
+  word-break: break-all;
+  white-space: pre-wrap;
 
   &.me {
     > div {
