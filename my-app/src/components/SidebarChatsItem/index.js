@@ -24,26 +24,32 @@ const SidebarChatsItem = ({ id, users, user, setUserChat, active }) => {
     setUserChat(userChat);
   };
 
+  console.log("Avatar?.photoURL ", Avatar?.photoURL);
   return (
     <C.Container onClick={handleNewChat} className={active}>
-      {Avatar ? (
-        <C.ImagePhoto
-          src={Avatar?.photoURL}
-          width={45}
-          height={45}
-          className="rounded-full cursor-pointer"
-          alt="Avatar"
-        />
-      ) : (
-        <C.ImagePhoto
-          src={require("../../images/noPhoto.png")}
-          width={45}
-          height={45}
-          className="rounded-full cursor-pointer"
-          alt="Avatar"
-        />
-      )}
-      <C.Name>{item.split("@")[0]}</C.Name>
+      <div className="relative mx-auto p-2">
+        <div className="absolute bg-gradient-to-r from-slate-900 rounded-md h-24 top-2 left-2 w-20"></div>
+        <img
+          src={Avatar?.photoURL ? Avatar?.photoURL : require("../../images/darkBack.jpg")}
+          alt=""
+          className="w-[90vw] rounded-md h-24 object-cover"
+        ></img>
+
+      
+        <div className="absolute top-5 left-5">
+          {Avatar ? (
+            <C.ImagePhoto src={Avatar?.photoURL} alt="Avatar" />
+          ) : (
+            <C.ImagePhoto
+              src={require("../../images/noPhoto.png")}
+              alt="Avatar"
+            />
+          )}
+        </div>
+        <div className="text-white absolute top-7 left-20">
+          {item.split("@")[0]}
+        </div>
+      </div>
     </C.Container>
   );
 };
