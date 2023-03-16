@@ -2,7 +2,6 @@ import React from "react";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { db } from "../../services/firebase";
 import * as C from "./styles";
-import { MdPerson } from "react-icons/md";
 
 const getUser = (users, userLogged) =>
   users?.filter((user) => user !== userLogged?.email)[0];
@@ -27,7 +26,23 @@ const SidebarChatsItem = ({ id, users, user, setUserChat, active }) => {
 
   return (
     <C.Container onClick={handleNewChat} className={active}>
-      {Avatar ? <C.Avatar src={Avatar?.photoURL} /> : <MdPerson />}
+      {Avatar ? (
+        <C.ImagePhoto
+          src={Avatar?.photoURL}
+          width={45}
+          height={45}
+          className="rounded-full cursor-pointer"
+          alt="Avatar"
+        />
+      ) : (
+        <C.ImagePhoto
+          src={require("../../images/noPhoto.png")}
+          width={45}
+          height={45}
+          className="rounded-full cursor-pointer"
+          alt="Avatar"
+        />
+      )}
       <C.Name>{item.split("@")[0]}</C.Name>
     </C.Container>
   );

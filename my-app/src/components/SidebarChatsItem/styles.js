@@ -45,3 +45,10 @@ export const Avatar = styled.img`
   margin-right: 10px;
   min-width: fit-content;
 `;
+
+export const ImagePhoto = styled.img`
+  border-radius: 9999px;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+`
