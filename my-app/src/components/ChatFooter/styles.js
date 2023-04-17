@@ -4,7 +4,7 @@ export const Container = styled.div`
   background-color: #191818;  
   bottom: 0;
   width: 100%;
-  padding: 7px;
+  padding: 15px 5px 15px 5px;
 `;
 
 export const Form = styled.form`
