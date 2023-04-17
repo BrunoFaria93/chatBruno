@@ -1,19 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 10vh;
+  background-color: #191818;  
   bottom: 0;
   width: 100%;
-  padding: 0px 20px;
-  background-color: #f0f2f5;
-  display: flex;
-  box-shadow: 2px 1px 3px 1px #0003;
-
-  svg {
-    width: 25px;
-    height: 25px;
-    color: #54656f;
-  }
+  padding: 7px;
 `;
 
 export const Form = styled.form`
@@ -21,13 +12,23 @@ export const Form = styled.form`
   align-items: center;
   gap: 5px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Input = styled.input`
   padding: 10px;
   outline: none;
   border: none;
-  border-radius: 5px;
-  width: 100%;
+  border-radius: 20px;
+  width: 95%;
   box-shadow: inset 0 0 1px 1px #0003;
+  background-color: #73665a;
+  text-color: white;
+  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #CBB088;
+  opacity: 1; /* Firefox */
+}
 `;

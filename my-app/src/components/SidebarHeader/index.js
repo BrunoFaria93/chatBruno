@@ -44,8 +44,7 @@ const SidebarHeader = ({ setUserChat }) => {
         onClick={() => [auth.signOut(), setUserChat(null)]}
       />
       <C.Options>
-        <MdDonutLarge />
-        <MdChat onClick={handleCreateChat} />
+        <img onClick={handleCreateChat} className="h-5 w-5 text-white" src={require("../../images/addUser.png")} alt="addUser"/>
         <MdMoreVert />
       </C.Options>
     </C.Container>

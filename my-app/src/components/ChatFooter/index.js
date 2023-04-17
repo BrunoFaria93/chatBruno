@@ -35,7 +35,8 @@ const ChatFooter = ({ chatId }) => {
           onChange={(e) => setMessage(e.target.value)}
           value={message}
         />
-        <MdSend onClick={handleSendMessage} />
+
+        <img onClick={handleSendMessage} className="absolute right-6 h-6 w-6" src={require("../../images/send.png")} alt="sendMsg" />
       </C.Form>
     </C.Container>
   );

@@ -15,7 +15,8 @@ const Login = () => {
           alt=""
         ></img>
         <C.Button onClick={handleSignin}>
-          <FaGoogle /> <span>Login com Google</span>
+          <FaGoogle className="mt-1"/> 
+          <span>Login com Google</span>
         </C.Button>
       </div>
     </C.Container>

@@ -20,4 +20,5 @@ export const ImagePhoto = styled.img`
   width: 45px;
   height: 45px;
   margin-right: 10px;
+  margin-top: 15px;
 `

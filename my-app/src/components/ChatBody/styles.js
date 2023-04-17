@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   flex: 1;
   // background-image: url("/zap-dark-wallpaper.jpg");
-  background-color: #0F0E0E;
+  background-color: #191818;
   overflow-y: auto;
 
   &::-webkit-scrollbar {

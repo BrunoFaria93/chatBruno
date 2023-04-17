@@ -24,29 +24,29 @@ const SidebarChatsItem = ({ id, users, user, setUserChat, active }) => {
     setUserChat(userChat);
   };
 
-  console.log("Avatar?.photoURL ", Avatar?.photoURL);
   return (
     <C.Container onClick={handleNewChat} className={active}>
       <div className="relative mx-auto p-2">
-        <div className="absolute bg-gradient-to-r from-slate-900 rounded-md h-24 top-2 left-2 w-20"></div>
-        <img
-          src={require("../../images/darkBack.jpg")}
-          alt=""
-          className="w-[90vw] rounded-md h-24 object-cover"
-        ></img>
+        {/* <div className="absolute bg-gradient-to-r from-slate-900 rounded-md h-24 top-2 left-2 w-20"></div> */}
+        <div className="w-[90vw] rounded-md h-24 object-cover"></div>
 
-      
         <div className="absolute top-5 left-5">
           {Avatar ? (
-            <C.ImagePhoto src={Avatar?.photoURL} alt="Avatar" />
+            <div className="relative">
+              <C.ImagePhoto src={Avatar?.photoURL} alt="Avatar" />
+              <p className="absolute text-gray-400 top-5 left-[59px] text-xs">Mensagem</p>
+            </div>
           ) : (
-            <C.ImagePhoto
-              src={require("../../images/noPhoto.png")}
-              alt="Avatar"
-            />
+            <div className="relative">
+              <C.ImagePhoto
+                src={require("../../images/noPhoto.png")}
+                alt="Avatar"
+              />
+              <p className="absolute text-gray-400 top-5 left-[59px] text-xs">Mensagem</p>
+            </div>
           )}
         </div>
-        <div className="text-white absolute top-7 left-20">
+        <div className="text-[#f3f3f3] absolute top-7 left-20">
           {item.split("@")[0]}
         </div>
       </div>

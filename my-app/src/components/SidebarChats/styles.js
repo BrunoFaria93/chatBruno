@@ -3,11 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 90vh;
   overflow-y: auto;
-  background: linear-gradient(
-    109.6deg,
-    rgb(43, 1, 91) 13.4%,
-    rgb(122, 2, 54) 100.2%
-  );
+  background: #191818;
+
   &::-webkit-scrollbar {
     width: 6px;
     border-radius: 10px;

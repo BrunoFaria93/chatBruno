@@ -6,11 +6,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(
-    109.6deg,
-    rgb(43, 1, 91) 13.4%,
-    rgb(122, 2, 54) 100.2%
-  );
+  backgroundColor: #2D2727;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(5px);

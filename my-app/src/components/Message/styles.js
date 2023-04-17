@@ -9,17 +9,16 @@ export const Line = styled.div`
   white-space: pre-wrap;
   &.me {
     > div {
-      background: #ff92a5;
+      background: #cbb088;
     }
     justify-content: right;
   }
 `;
 
 export const Content = styled.div`
-  background: #ebe0d0;
-
+  background: #73665A;
   border-radius: 10px;
-  box-shadow: 0 1px 1px #dd5e89;
+  box-shadow: 0 1px 1px #cbb088;
   display: flex;
   flex-direction: column;
   padding: 3px;

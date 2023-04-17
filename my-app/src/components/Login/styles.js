@@ -5,11 +5,7 @@ export const Container = styled.div`
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    109.6deg,
-    rgb(43, 1, 91) 13.4%,
-    rgb(122, 2, 54) 100.2%
-  );
+  background: #191818;
   .login {
     display: flex;
     flex-direction: column;
