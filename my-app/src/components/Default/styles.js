@@ -9,11 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  background: linear-gradient(
-    109.6deg,
-    rgb(43, 1, 91) 13.4%,
-    rgb(122, 2, 54) 100.2%
-  );
+  background: #191818;
   color: white;
   img {
     width: 200px;

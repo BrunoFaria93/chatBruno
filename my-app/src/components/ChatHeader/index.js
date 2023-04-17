@@ -16,8 +16,8 @@ const ChatHeader = ({ photoURL, name }) => {
         </C.NameContent>
       </C.UserInfo>
       <C.Options>
-        <MdSearch />
-        <MdMoreVert />
+        {/* <MdSearch />
+        <MdMoreVert /> */}
       </C.Options>
     </C.Container>
   );

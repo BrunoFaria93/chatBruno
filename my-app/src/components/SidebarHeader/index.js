@@ -45,7 +45,7 @@ const SidebarHeader = ({ setUserChat }) => {
       />
       <C.Options>
         <img onClick={handleCreateChat} className="h-5 w-5 text-white" src={require("../../images/addUser.png")} alt="addUser"/>
-        <MdMoreVert />
+        {/* <MdMoreVert /> */}
       </C.Options>
     </C.Container>
   );
