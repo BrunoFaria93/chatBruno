@@ -30,7 +30,7 @@ const SidebarChatsItem = ({ id, users, user, setUserChat, active }) => {
       <div className="relative mx-auto p-2">
         <div className="absolute bg-gradient-to-r from-slate-900 rounded-md h-24 top-2 left-2 w-20"></div>
         <img
-          src={Avatar?.photoURL ? Avatar?.photoURL : require("../../images/darkBack.jpg")}
+          src={require("../../images/darkBack.jpg")}
           alt=""
           className="w-[90vw] rounded-md h-24 object-cover"
         ></img>
