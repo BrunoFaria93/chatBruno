@@ -10,7 +10,6 @@ export const Container = styled.div`
   z-index: 1;
   background: #191818;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(5px);
 
   color: #f3f3f3;

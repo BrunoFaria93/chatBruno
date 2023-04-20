@@ -41,18 +41,11 @@ export const Button = styled.button`
   font-size: 18px;
   padding: 14px 18px;
   cursor: pointer;
-  background: radial-gradient(
-    328px at 2.9% 15%,
-    rgb(191, 224, 251) 0%,
-    rgb(232, 233, 251) 25.8%,
-    rgb(252, 239, 250) 50.8%,
-    rgb(234, 251, 251) 77.6%,
-    rgb(240, 251, 244) 100.7%
-  );
   border: none;
   border-radius: 200px;
+  background: #73665A;
   width: 100%;
-  color: #742f37;
+  color: #CBB088;
   font-weight: bold;
   span {
   }

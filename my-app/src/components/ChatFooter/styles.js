@@ -26,7 +26,6 @@ export const Input = styled.input`
   box-shadow: inset 0 0 1px 1px #0003;
   background-color: #73665a;
   text-color: white;
-  
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #CBB088;
   opacity: 1; /* Firefox */

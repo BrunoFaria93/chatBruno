@@ -11,8 +11,8 @@ const Login = () => {
     <C.Container>
       <div className="login">
         <img
-          src="https://i.pinimg.com/originals/87/c1/5b/87c15b1c7c465c9a8f9e979559fe87ac.png"
-          alt=""
+          src={require("../../images/chatimage.png")}
+          alt="illustrationChat"
         ></img>
         <C.Button onClick={handleSignin}>
           <FaGoogle className="mt-1"/> 
