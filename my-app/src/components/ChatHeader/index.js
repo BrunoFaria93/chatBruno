@@ -10,7 +10,24 @@ const ChatHeader = ({ photoURL, name }) => {
         <FaArrowLeft />
       </div>
       <C.UserInfo>
-        {photoURL ? <C.Avatar src={photoURL} alt="Avatar" /> : <MdPerson />}
+        {photoURL ? (
+          <img
+            src={photoURL}
+            width={35}
+            height={35}
+            className="rounded-full cursor-pointer"
+            alt="Avatar"
+          />
+        ) : (
+          <img
+            src={MdPerson}
+            width={35}
+            height={35}
+            className="rounded-full cursor-pointer"
+            alt="Avatar"
+          />
+        )}
+
         <C.NameContent>
           <C.Name>{name}</C.Name>
         </C.NameContent>
