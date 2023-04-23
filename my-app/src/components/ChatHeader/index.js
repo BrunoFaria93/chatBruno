@@ -15,7 +15,7 @@ const ChatHeader = ({ photoURL, name }) => {
             src={photoURL}
             width={35}
             height={35}
-            className="rounded-full cursor-pointer"
+            className="rounded-full cursor-pointer mr-1"
             alt="Avatar"
           />
         ) : (
@@ -23,7 +23,7 @@ const ChatHeader = ({ photoURL, name }) => {
             src={MdPerson}
             width={35}
             height={35}
-            className="rounded-full cursor-pointer"
+            className="rounded-full cursor-pointer mr-1"
             alt="Avatar"
           />
         )}
