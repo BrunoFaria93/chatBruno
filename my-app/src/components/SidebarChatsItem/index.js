@@ -203,7 +203,6 @@ const SidebarChatsItem = ({ id, users, user, setUserChat, active }) => {
     setUserChat(userChat);
   };
 
-  console.log(lastMsg);
   return (
     <C.Container onClick={handleNewChat} className={active}>
       <div className="relative mx-auto p-2">
