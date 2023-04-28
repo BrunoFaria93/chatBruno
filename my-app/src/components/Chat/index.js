@@ -10,7 +10,11 @@ import Loading from "../Loading";
 
 const Chat = ({ userChat }) => {
   const [loading, setLoading] = useState(true);
+  const [height, setHeight] = useState(0);
 
+  useEffect(() => {
+    setHeight(window.innerHeight);
+  }, []);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -23,7 +27,7 @@ const Chat = ({ userChat }) => {
           <Default />
         </div>
       ) : (
-        <C.Container>
+        <C.Container style={{height: height}} className="overflow-hidden">
           <ChatHeader photoURL={userChat?.photoURL} name={userChat?.name} />
           <ChatBody chatId={userChat?.chatId} />
           <ChatFooter chatId={userChat?.chatId} />

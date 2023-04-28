@@ -12,6 +12,12 @@ const App = () => {
   const [user, loading] = useAuthState(auth);
   const [userChat, setUserChat] = useState(null);
   const [isMobile, setIsMobile] = useState(true);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    setHeight(window.innerHeight);
+  }, []);
+
   useEffect(() => {
     if (user) {
       db.collection("users").doc(user.uid).set({
@@ -34,7 +40,7 @@ const App = () => {
     <>
       {isMobile ? (
         <>
-          <C.Container>
+          <C.Container style={{height: height}}>
             {userChat ? (
               <>
                 <Chat userChat={userChat} />
@@ -55,7 +61,7 @@ const App = () => {
                 <Chat userChat={userChat} />
               </section>
             ) : (
-              <div className="flex">
+              <section className="flex h-[90vh]">
                 <Sidebar setUserChat={setUserChat} userChat={userChat} />
                 <div className="flex justify-center items-center bg-[#0F0E0E] w-[70vw] h-screen">
                   <div className="float w-72">
@@ -65,7 +71,7 @@ const App = () => {
                     ></img>
                   </div>
                 </div>
-              </div>
+              </section>
             )}
           </C.Container>
         </>

@@ -19,7 +19,7 @@ export const Container = styled.div`
     height: calc(100vh - 110px);
     overflow-y: auto;
     overflow-x: hidden;
-    width: 30vw;
+    width: 32vw;
     &::-webkit-scrollbar {
       width: 6px;
       border-radius: 10px;
