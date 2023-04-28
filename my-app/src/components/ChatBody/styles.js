@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-color: #191818;
   overflow-y: auto;
+  flex: 1;
 
   @media (min-width: 768px) {
-    background-color: #0F0E0E;
+    background-color: #0f0e0e;
   }
-  
+
   &::-webkit-scrollbar {
     width: 6px;
     border-radius: 10px;
