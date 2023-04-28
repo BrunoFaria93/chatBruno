@@ -213,7 +213,7 @@ const SidebarChatsItem = ({ id, users, user, setUserChat, active }) => {
           {Avatar ? (
             <div className="relative">
               <C.ImagePhoto src={Avatar?.photoURL} alt="Avatar" />
-              <div className="absolute text-[#CBB088] top-5 left-[59px] text-xs">
+              <div className="absolute text-gray-400 top-5 left-[59px] text-xs">
                 <div className="flex w-[150px]">
                   <p className="truncate">{lastMsg || "Sem mensagens"}</p>
                 </div>
@@ -225,7 +225,7 @@ const SidebarChatsItem = ({ id, users, user, setUserChat, active }) => {
                 src={require("../../images/noPhoto.png")}
                 alt="Avatar"
               />
-              <div className="absolute text-[#CBB088] top-5 left-[59px] text-xs">
+              <div className="absolute text-gray-400 top-5 left-[59px] text-xs">
                 <div className="flex w-[150px]">
                   <p className="truncate">{lastMsg || "Sem mensagens"}</p>
                 </div>
@@ -236,7 +236,7 @@ const SidebarChatsItem = ({ id, users, user, setUserChat, active }) => {
         <div className="text-[#f3f3f3] absolute top-7 left-20">
           {item.split("@")[0]}
         </div>
-        <div className="absolute right-6 top-8 text-xs text-[#73665A] ">
+        <div className="absolute right-6 top-8 text-xs text-[#e4e6eb] ">
          {lastMsgTime}
         </div>
       </div>

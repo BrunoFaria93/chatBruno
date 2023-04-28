@@ -5,7 +5,7 @@ export const Container = styled.div`
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background: #191818;
+  background: #242526;
   .login {
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ export const Button = styled.button`
   border-radius: 200px;
   background: #73665A;
   width: 100%;
-  color: #CBB088;
+  color: #e4e6eb;
   font-weight: bold;
   span {
   }

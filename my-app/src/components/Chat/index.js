@@ -23,7 +23,7 @@ const Chat = ({ userChat }) => {
   return (
     <>
       {loading ? (
-        <div className="h-screen w-full bg-[#191818]">
+        <div className="h-screen w-full bg-[#242526]">
           <Default />
         </div>
       ) : (

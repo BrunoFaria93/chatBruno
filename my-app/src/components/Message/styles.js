@@ -9,16 +9,16 @@ export const Line = styled.div`
   white-space: pre-wrap;
   &.me {
     > div {
-      background: #cbb088;
+      background: #1877F2;
     }
     justify-content: right;
   }
 `;
 
 export const Content = styled.div`
-  background: #73665A;
+  background: #4E4F50;
   border-radius: 10px;
-  box-shadow: 0 1px 1px #cbb088;
+  box-shadow: 0 1px 1px #5f6162;
   display: flex;
   flex-direction: column;
   padding: 3px;
@@ -32,7 +32,7 @@ export const Message = styled.span`
 
 export const MessageDate = styled.span`
   font-size: 11px;
-  color: black;
+  color: #e4e6eb;
   text-align: right;
   height: 15px;
   margin: -5px 5px 0;

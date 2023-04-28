@@ -4,7 +4,7 @@ import * as C from "./styles";
 
 const Loading = () => {
   return (
-    <div className="bg-[#191818] overflow-hidden overflow-x-hidden overflow-y-hidden">
+    <div className="bg-[#242526] overflow-hidden overflow-x-hidden overflow-y-hidden">
       <div className="shadow rounded-md p-4 max-w-sm w-full mx-auto">
         <div className="animate-pulse flex space-x-4">
           <div className="rounded-full bg-slate-700 h-10 w-10"></div>

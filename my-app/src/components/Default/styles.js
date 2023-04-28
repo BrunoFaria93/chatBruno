@@ -9,7 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  background: #191818;
+  background: #242526;
   color: white;
   img {
     width: 200px;
