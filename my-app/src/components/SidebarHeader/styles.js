@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 59px;
   padding: 0px 16px;
+  background-color: #2D2727;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  backgroundColor: #2D2727;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(5px);

@@ -34,9 +34,10 @@ const ChatFooter = ({ chatId }) => {
           placeholder="Mensagem"
           onChange={(e) => setMessage(e.target.value)}
           value={message}
+          className="text-[#f2ebe2]"
         />
 
-        <img onClick={handleSendMessage} className="absolute right-8 h-6 w-6" src={require("../../images/send.png")} alt="sendMsg" />
+        <img onClick={handleSendMessage} className="absolute right-8 h-6 w-6 lg:right-14 cursor-pointer" src={require("../../images/send.png")} alt="sendMsg" />
       </C.Form>
     </C.Container>
   );

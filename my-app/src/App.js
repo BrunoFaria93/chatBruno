@@ -11,7 +11,7 @@ import "./index.css";
 const App = () => {
   const [user, loading] = useAuthState(auth);
   const [userChat, setUserChat] = useState(null);
-
+  const [isMobile, setIsMobile] = useState(true);
   useEffect(() => {
     if (user) {
       db.collection("users").doc(user.uid).set({
@@ -21,22 +21,56 @@ const App = () => {
     }
   }, [user]);
 
+  useEffect(() => {
+    if (window.innerWidth > 640) {
+      setIsMobile(false);
+    }
+  }, []);
   if (loading) return <Loading />;
 
   if (!user) return <Login />;
 
   return (
-    <C.Container>
-      {userChat ? (
+    <>
+      {isMobile ? (
         <>
-          <Chat userChat={userChat} />
+          <C.Container>
+            {userChat ? (
+              <>
+                <Chat userChat={userChat} />
+              </>
+            ) : (
+              <>
+                <Sidebar setUserChat={setUserChat} userChat={userChat} />
+              </>
+            )}
+          </C.Container>
         </>
       ) : (
         <>
-          <Sidebar setUserChat={setUserChat} userChat={userChat} />
+          <C.Container>
+            {userChat ? (
+              <section className="flex">
+                <Sidebar setUserChat={setUserChat} userChat={userChat} />
+                <Chat userChat={userChat} />
+              </section>
+            ) : (
+              <div className="flex">
+                <Sidebar setUserChat={setUserChat} userChat={userChat} />
+                <div className="flex justify-center items-center bg-[#0F0E0E] w-[70vw] h-screen">
+                  <div className="float w-72">
+                    <img
+                      src={require("./images/chatimage.png")}
+                      alt="illustrationChat"
+                    ></img>
+                  </div>
+                </div>
+              </div>
+            )}
+          </C.Container>
         </>
-      )}
-    </C.Container>
+      )}x
+    </>
   );
 };
 

@@ -29,5 +29,9 @@ export const Input = styled.input`
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #CBB088;
   opacity: 1; /* Firefox */
+  :focus,
+  :valid{
+    color:red;
+  }
 }
 `;

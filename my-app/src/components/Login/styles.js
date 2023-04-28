@@ -13,8 +13,8 @@ export const Container = styled.div`
     justify-content: center;
   }
   img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     animation: float 2s ease infinite;
     margin-bottom: 100px;
   }

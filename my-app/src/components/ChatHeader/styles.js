@@ -8,7 +8,7 @@ export const Container = styled.div`
   justify-content: space-between;
   box-shadow: 0 1px 2px #0003;
   z-index: 1;
-  background: #191818;
+  background-color: #191818;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(5px);
 

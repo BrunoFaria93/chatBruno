@@ -1,6 +1,5 @@
 import React from "react";
 import * as C from "./styles";
-import { MdDonutLarge, MdChat, MdMoreVert } from "react-icons/md";
 import * as EmailValidator from "email-validator";
 import { auth, db } from "../../services/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -45,7 +44,6 @@ const SidebarHeader = ({ setUserChat }) => {
       />
       <C.Options>
         <img onClick={handleCreateChat} className="h-5 w-5 text-white" src={require("../../images/addUser.png")} alt="addUser"/>
-        {/* <MdMoreVert /> */}
       </C.Options>
     </C.Container>
   );

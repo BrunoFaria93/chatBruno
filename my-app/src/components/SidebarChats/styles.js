@@ -16,9 +16,10 @@ export const Container = styled.div`
   }
 
   @media (min-width: 768px) {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 110px);
     overflow-y: auto;
-
+    overflow-x: hidden;
+    width: 30vw;
     &::-webkit-scrollbar {
       width: 6px;
       border-radius: 10px;

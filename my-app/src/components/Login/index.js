@@ -15,7 +15,7 @@ const Login = () => {
           alt="illustrationChat"
         ></img>
         <C.Button onClick={handleSignin}>
-          <FaGoogle className="mt-1"/> 
+          <FaGoogle className="mt-1 mr-3"/> 
           <span>Login com Google</span>
         </C.Button>
       </div>
