@@ -6,7 +6,7 @@ Bem-vindo ao "Chat Bruno" - um aplicativo de bate-papo em tempo real criado com 
 
 ## Visão Geral
 
-O "Chat Bruno" é um aplicativo de bate-papo em tempo real que permite aos usuários conversar com outras pessoas. O aplicativo é construído usando React para o front-end e Firebase para o back-end. Ele oferece uma interface simples e intuitiva para iniciar conversas com outros usuários.
+O "Chat Bruno" é um aplicativo de bate-papo em tempo real que permite aos usuários conversarem com outras pessoas. O aplicativo é construído usando React para o front-end e Firebase para o back-end. Ele oferece uma interface simples e intuitiva para iniciar conversas com outros usuários.
 
 ## Como Usar
 
